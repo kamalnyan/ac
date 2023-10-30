@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/148dbd2563.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="nav">
+        <div class="x1stpart">
+            <li class="leftnav"><a href="index.html" class="hvr" class="active" id="hme"><i
+                        class="fa-solid fa-house"></i>
+                    Home</a></li>
+            <li class="leftnav mar"><span class="a hvr" onclick="login()" id="spn">login/signup</span></li>
+            <li class="leftnav mar"><a href="#aboutuss" class="hvr">AboutUs</a></li>
+            <li class="leftnav mar"><a href="#foot" class="hvr">ContactUs</a></li>
+        </div>
+        <div class="x2stpart">
+            <li class="rightnav">
+                <input list="searchnames" id="search" placeholder=" Search your friends">
+                <datalist id="searchnames">
+                    <option value="Kamal nayan"></option>
+                    <option value="Abhishek"></option>
+                    <option value="Aakarsh"></option>
+                    <option value="Gurjant"></option>
+                    <option value="Ankit"></option>
+                    <option value="Rohit"></option>
+                </datalist>
+                <span id="search2" onclick="pages()">Search</span>
+            </li>
+        </div>
+    </nav>
+    <div class="pdiv">
+        <div id="maindiv">
+            <form action="signupdata.php" method="post">
+                <div id="head">
+                    <h1 class="head">Signup </h1>
+                </div>
+                <div>
+                    <input type="text" placeholder="   Name"  name="name" id="username" class="inputf">
+                </div>
+                <div>
+                    <input type="text" placeholder="  UID 20235" id="uid" name="uid" class="inputf">
+                </div>
+                <div>
+                    <input type="text" placeholder="  Phone Number" name="phone" id="phonenumber" class="inputf">
+                </div>
+                <div>
+                    <input type="text" placeholder="  Parent Phone Number" name="pphone" id="Parentphonenumber" class="inputf">
+                </div>
+                <div>
+                    <input type="password" placeholder="  New Password" name="password" id="roomnumber" class="inputf">
+                </div>
+                <div id="building">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" id=""value="M">Male
+                    <input type="radio" name="gender" id=""value="F">Female
+                    <input type="radio" name="gender" id=""value="O">Other
+                </div>
+                <div id="sumbit">
+                    <button id="button">
+                        Signup
+                    </button>
+                </div>
+                <div class="lin">
+                    <div>
+                        <a href="#" id="Forget" onclick="forget()"> Forget? </a>
+                    </div>
+                    <div>
+                        <a href="login.html" id="Signup"> Login </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+function forget(){
+ window.alert("Will Be Adeed Soon")
+}
+</script>
+</html>

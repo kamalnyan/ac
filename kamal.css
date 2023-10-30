@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/newwall.jpg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+  min-height: 110vh;
+  position: relative;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mar{
+  margin-top: 0.5%;
+}
+.x1stpart {
+  display: flex;
+  width: 100%;
+}
+
+.x1stpart li {
+  list-style: none;
+  display: inline-block;
+  padding: 2% 0% 0% 1%;
+  line-height: 2px;
+}
+
+.x1stpart li a {
+  text-decoration: none;
+  color: #001C30;
+}
+.leftnav{
+  color: #000e17;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+}
+.hvr:hover {
+  cursor: pointer;
+  color: #617A55;
+}
+
+/* navbar ends */
+
+/* heading */
+#maindiv{
+    display: flex;
+}
+#namediv {
+    display: block;
+    width: 100%;
+    margin-top: 35px;
+    
+}
+.name{
+    margin: 80px 0px 0px 120px;
+    color: #495E57;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+#lastname{
+    color: #05386b;
+    margin-left: 20%;
+    font-size: 100px;
+    font-family: sans-serif;
+}
+
+/* heading ends */
+
+/* pics */
+#mainslide {
+    width: 100%; /* Set the width of the slider container */
+    overflow: hidden; /* Hide overflow content (images outside the container) */
+    position: relative; /* Set the positioning context for child elements */
+    margin-top: 70px;
+    margin-right: 130px;
+    margin-left: 40px;
+  }
+  
+  #slider {
+    display: flex; /* Display images in a horizontal row */
+    transition: transform 1s ease; /* Add smooth transition effect for sliding (adjust duration as needed) */
+    animation: slide 10s infinite alternate; /* Automatically slide images every 5 seconds (adjust duration as needed) */
+  }
+  
+  .img {
+    flex: 0 0 100%; /* Set the width of each image to 100% of the container */
+  }
+  
+  .img img {
+    width: 100%; /* Make sure the image fills its container */
+    height: 400px; /* Maintain image aspect ratio */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* Start from the first image */
+    }
+    33.33% {
+      transform: translateX(-100%); /* Move to the second image */
+    }
+    66.66% {
+      transform: translateX(-200%); /* Move to the third image */
+    }
+    100% {
+      transform: translateX(0); /* Return to the first image for a seamless loop */
+    }
+  }
+  #aboutkamal{
+    margin-top: 4%;
+  }
+  #kamalabout{
+    margin-left: 3%;
+    color: #05386b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #hr{
+    margin-left: 3%;
+    margin-right: 82%;
+  }
+  .parah{
+    margin: 1.2%;
+    padding: 1.1%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    /* color: #C07F00; */
+    color: #001C30;
+    font-size: large;
+    word-spacing: 2.5px;
+}
+.donodiv{
+  display: flex;
+}
+#achivments,#participation{
+  width: 50%;
+  color: #05386b;
+  margin-left: 3%;
+}
+.pachivments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh; /* Adjust the height according to your layout */
+}
+#achievementtable {
+  text-align: center;
+  /* Additional styling properties for the table */
+  border-collapse: collapse;
+  width: 80%; /* Adjust the width based on your design */
+  max-width: 600px; /* Optional: Set a maximum width */
+}
+
+#achievementtable,#participationtable{
+  border:1px solid black;
+  border-collapse: collapse;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #001C30;
+  border-radius: 20px;
+}
+th,td{
+height: 60px;
+padding: 15px 20px 0px 20px;
+}
+.colorred{
+color: red;
+}
+#kamalsocial{
+  margin-left: 3%;
+  color: #05386b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.socialslinlks{
+  display: flex;
+  width: 33.33%;
+  align-items: center;
+}
+.socialslinlks li{
+ margin-left: 1%;
+}
+.email li{
+  margin-left: 5%;
+}
+#socials ul{
+  /* display: flex; */
+  margin-top: 40px;
+  margin-left: 200px;
+  list-style: none;
+}
+#socials ul a img{
+  width: 50px;
+  height: 50px;
+  margin-top:20px;
+}
+#foots{
+  display:inline-flex;
+  list-style: none;
+  margin-left: 84%;
+  margin-bottom: 30px;
+}
+#foots li{
+ margin: 0% 10%;
+}
+#foots li a{
+  color: bisque;
+}
+#foots li a:hover{
+  color: #12486B;
+}
+.footdiv {
+ display: flex;
+}
+.footdiv div{
+  width: 50%;
+}
+#socials ul a img:hover{
+ box-shadow: 0px 3px 10px 2px ;
+}
+@media(max-width:1085px){
+ #maindiv{
+  align-items: center;
+  display: block;
+ }
+ #namediv{
+  text-align: center;
+ }
+}
+@media(max-width:1114px){
+  .donodiv{
+    display: block;
+  }
+  #achivments,#participation{
+    width: 100%;
+  }
+}
+#socials{
+width: 100%;
+display: flex;
+}
+#links{
+  margin-left: 4%;
+  width: 50%;
+}
+.Learned {
+  color: #05386b;
+  margin-left: 6%;
+  width: 50%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tknow {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 8% auto; 
+  text-align: center;
+  width: 600px;
+  height: 300px;
+  /* background-color: gray; */
+  border-radius: 20px;
+}
+.tknow div {
+  font-size: large;
+}
+.tknow div h4{
+  background-color: #04364A;
+  color: #DAFFFB;
+  margin: 5% 25% 0% 25%;
+  padding: 1.8%;
+  border-radius: 20px;
+}
